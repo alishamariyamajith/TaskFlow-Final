@@ -1,0 +1,109 @@
+/* General Styles */
+.task-tracker-home {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+}
+
+.hero-section .carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.hero-section .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  bottom: 100px;
+}
+
+.hero-section .carousel-caption h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Features Section */
+.features-section {
+  background-color: #fff;
+}
+
+.feature-card {
+  margin-bottom: 20px;
+}
+
+.feature-card .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  height: 100%;
+}
+
+.feature-card .card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+/* Tasks Section */
+.tasks-section {
+  background-color: #f8f9fa;
+}
+
+/* Team Section */
+.team-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.employee-avatar img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: #0d6efd;
+}
+
+/* Footer */
+.footer {
+  background-color: #212529;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section .carousel-item img {
+    height: 400px;
+  }
+  
+  .hero-section .carousel-caption {
+    bottom: 20px;
+  }
+  
+  .hero-section .carousel-caption h2 {
+    font-size: 1.8rem;
+  }
+}

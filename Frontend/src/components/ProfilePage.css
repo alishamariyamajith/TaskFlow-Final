@@ -1,0 +1,23 @@
+* ProfilePage.css */
+.profile-page {
+  background-color: #f8f9fc;
+  min-height: 100vh;
+}
+
+/* Add this to your existing Home.css or create a new CSS file */
+.MuiCard-root {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12) !important;
+}
+
+.MuiAvatar-root {
+  transition: transform 0.3s ease;
+}
+
+.MuiAvatar-root:hover {
+  transform: scale(1.05);
+}

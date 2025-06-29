@@ -1,0 +1,187 @@
+.task-tracker-app {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #343a40;
+  background-color: #f8fafc;
+}
+
+/* Typography */
+.display-5 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+/* Section Spacing */
+.py-6 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.mb-6 {
+  margin-bottom: 5rem;
+}
+
+/* Hero Section */
+.hero-section.bg-gradient-primary {
+  background: linear-gradient(135deg, #0d6efd 0%, #0b5ed7 100%);
+}
+
+/* Dashboard Frame */
+.dashboard-frame-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.dashboard-frame {
+  background: #f8f9fa;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  border: 1px solid #dee2e6;
+}
+
+.frame-header {
+  background: #e9ecef;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.frame-controls {
+  display: flex;
+  gap: 6px;
+  margin-right: 10px;
+}
+
+.frame-control {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ced4da;
+}
+
+.frame-control.close { background: #ff5f57; }
+.frame-control.minimize { background: #febc2e; }
+.frame-control.maximize { background: #28c840; }
+
+.frame-title {
+  flex-grow: 1;
+  background: white;
+  padding: 3px 15px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #495057;
+  text-align: center;
+}
+
+.dashboard-preview {
+  background: white;
+  min-height: 300px;
+}
+
+/* Features Section */
+.feature-icon-bg {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.shadow-lg-hover {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.shadow-lg-hover:hover {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+/* Backgrounds */
+.bg-soft {
+  background-color: #f8fafc;
+}
+
+/* Task Table */
+.avatar {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.avatar-xl {
+  width: 70px;
+  height: 70px;
+}
+
+.table th {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #f8f9fa;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* Progress Bars */
+.progress {
+  border-radius: 10px;
+}
+
+/* Disabled buttons */
+.btn.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .display-5 {
+    font-size: 2rem;
+  }
+  
+  .py-6 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .dashboard-frame-container {
+    max-width: 100%;
+  }
+  
+  .avatar-xl {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+}

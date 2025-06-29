@@ -1,0 +1,116 @@
+.task-table-wrapper {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.task-header {
+  margin-bottom: 1rem;
+}
+.task-header-row .MuiTableCell-head {
+  color: #080808 ;
+  font-weight: 600 ;
+  background-color: #f9f9f9 t;
+}
+
+
+.task-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.task-table th, .task-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.task-info .task-title {
+  font-weight: 500;
+}
+
+.task-info .task-id {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.assignee {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatar {
+  background: #ddd;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.due-date .track-status {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.overdue {
+  color: red;
+}
+
+.on-track {
+  color: green;
+}
+
+
+
+.badge.red { background-color: #e74c3c; }
+.badge.orange { background-color: #f39c12; }
+.badge.green { background-color: #2ecc71; }
+.badge.blue { background-color: #3498db; }
+.badge.gray { background-color: #7f8c8d; }
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.progress-bar {
+  background-color: #3498db;
+  height: 6px;
+  width: 100px;
+  border-radius: 10px;
+}
+.task-table-container {
+  padding: 2rem;
+  background-color: #f9f9ff;
+  border-radius: 16px;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.task-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  color: #0a0a0a;
+}
+
+.badge {
+  display: inline-block;
+  min-width: 70px;
+  text-align: center;
+}
+
