@@ -141,7 +141,7 @@ const TaskTable = () => {
 
      
       <Box mb={2}>
-        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: '#3f51b5', marginLeft: '20px' }}>Filter Tasks</Typography>
+       
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, ml: 3 }}>
           <select
             value={projectFilter}
@@ -180,8 +180,8 @@ const TaskTable = () => {
 
       </Box>
 
-      <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 500 }} size="small" aria-label="task table">
+      <TableContainer component={Paper} sx={{ maxHeight: 500, overflowY: 'auto' }}>
+        <Table stickyHeader sx={{ minWidth: 500 }} size="small" aria-label="task table">
           <TableHead>
             <TableRow style={{ backgroundColor: '#d3d3d3' }}>
               {['Project ID', 'Title', 'Assignee', 'Due Date', 'Priority', 'Status', 'Progress', 'GitHub', 'Actions'].map(header => (

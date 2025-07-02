@@ -9,7 +9,7 @@ import {
 } from '@mui/material';
 import {
   Add,
-  Person, Email, Close,
+  Person, Email, Close, Search,
   Work, Lock
 } from '@mui/icons-material';
 
@@ -25,6 +25,8 @@ const TeamManagement = () => {
   });
 
   const [teamMembers, setTeamMembers] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+  
 
   useEffect(() => {
     const fetchTeamMembers = async () => {
@@ -95,6 +97,10 @@ const TeamManagement = () => {
     }
   };
 
+  const filteredTeamMembers = teamMembers.filter(member =>
+    (member.username || '').toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <Box sx={{
       p: 4,
@@ -148,12 +154,28 @@ const TeamManagement = () => {
 
         {/* Content */}
         <Box sx={{ p: 3 }}>
-          <Typography variant="h6" sx={{ color: '#64748b', mb: 3, fontWeight: 600 }}>
-            Team Members
-          </Typography>
+          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
+            <Typography variant="h6" sx={{ color: '#64748b', fontWeight: 600 }}>
+              Team Members
+            </Typography>
+            <TextField
+              variant="outlined"
+              size="small"
+              placeholder="Search by name..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <Search color="action" />
+                  </InputAdornment>
+                ),
+              }}
+            />
+          </Box>
 
           <div className="row g-3">
-            {teamMembers.map(member => (
+            {filteredTeamMembers.map(member => (
               <div key={member.userId} className="col-md-6">
                 <div className="card border-0 shadow-sm-hover" style={{ backgroundColor: '#f8f9fa', borderRadius: '8px' }}>
                   <div className="card-body p-3">
